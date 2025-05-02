@@ -68,5 +68,5 @@ It encounters errors when printing wirelessly,
 affecting all connected devices in my home network.
 This has significantly disrupted my ability to manage daily tasks.
 Could you please assist in diagnosing and resolving this issue? Any help would be appreciated.
-"""])
+"""],cache_examples=False)
 chatbot.launch()
