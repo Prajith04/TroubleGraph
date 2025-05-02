@@ -12,7 +12,8 @@ import re
 from datasets import load_dataset
 from langchain.schema import Document
 import os
-
+from dotenv import load_dotenv
+load_dotenv()
 # Initialize once
 gliner_model = GLiNER.from_pretrained("urchade/gliner_medium-v2.1")
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
