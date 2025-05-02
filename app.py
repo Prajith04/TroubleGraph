@@ -58,5 +58,15 @@ def chat_fn(message, history_list):
 
     return response
 
-chatbot = gr.ChatInterface(fn=chat_fn, title="🛠️ Customer Support Chatbot")
+chatbot = gr.ChatInterface(fn=chat_fn, title="🛠️ Customer Support Chatbot",
+flagging_mode="manual",flagging_options=["solved","Not solved"],
+examples=["""Dear Support Team, we are encountering a significant problem 
+with our AWS Management Service that is impacting our service availability.
+An immediate fix is essential to reinstate normal deployment operations.""","""
+I am writing to express concern about my HP DeskJet 3755 printer, which is malfunctioning. 
+It encounters errors when printing wirelessly, 
+affecting all connected devices in my home network.
+This has significantly disrupted my ability to manage daily tasks.
+Could you please assist in diagnosing and resolving this issue? Any help would be appreciated.
+"""])
 chatbot.launch()
