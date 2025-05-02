@@ -30,7 +30,7 @@ retriever = doc_store.as_retriever(search_type="similarity", search_kwargs={"k":
 llm = ChatGroq(api_key=os.getenv("GROQ_API_KEY"), model="meta-llama/llama-4-scout-17b-16e-instruct")
 
 chat_prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are an intelligent assistant. Use context and chat history to answer."),
+    ("system", "You are an intelligent assistant. Use context and chat history to answer and don't include tags."),
     MessagesPlaceholder("chat_history"),
     ("human", "{query}")
 ])
