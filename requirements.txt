@@ -1,0 +1,9 @@
+gradio
+gliner
+qdrant-client
+sentence-transformers
+datasets
+langchain
+langchain-community
+langchain-qdrant
+langchain-groq
