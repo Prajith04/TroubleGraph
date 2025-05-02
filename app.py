@@ -1,4 +1,4 @@
-mport gradio as gr
+import gradio as gr
 from gliner import GLiNER
 from langchain_community.vectorstores import Qdrant
 from langchain_community.embeddings import HuggingFaceEmbeddings
